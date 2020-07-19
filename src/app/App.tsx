@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
-import { Button } from 'antd';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import AppRoutes from '../routing';
 
 const App: FC = () => (
-  <div className="App">
-    <Button type="primary">Button</Button>
-  </div>
+  <BrowserRouter>
+    <AppRoutes />
+  </BrowserRouter>
 );
 
 export default App;
